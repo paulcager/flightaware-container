@@ -13,7 +13,6 @@ RUN wget https://flightaware.com/adsb/piaware/files/packages/pool/piaware/f/flig
 RUN apt-get update && \
     apt-get install -y piaware
 
-COPY feeder_id /var/cache/piaware/
 COPY startup.sh /usr/bin/
 
 
